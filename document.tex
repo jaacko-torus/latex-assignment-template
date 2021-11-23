@@ -1,0 +1,99 @@
+\documentclass[10pt, letterpaper]{article}
+
+\usepackage[margin=0.75in, footskip=0.25in]{geometry}
+%\usepackage[superscript,biblabel]{cite}
+\usepackage[colorlinks]{hyperref}
+\usepackage[stable]{footmisc}
+\usepackage[T1]{fontenc}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage{authblk}
+\usepackage[english]{babel}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage{xfrac}
+\usepackage[
+	backend=biber,
+	% numeric, apa, mla, chicago-authordate, ieee, nature, chem-acs, science
+	style=apa,
+	sorting=none
+	% autocite=footnote
+]{biblatex}
+\usepackage{parskip}
+
+% \graphicspath{ {./images/} }
+
+\addbibresource{document.bib}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\definecolor{blue}{rgb}{0,0,0.7}
+
+\hypersetup{
+	colorlinks,
+	linkcolor=blue,
+	filecolor=blue,
+	urlcolor=blue,
+	citecolor=blue
+}
+
+\setlength{\parindent}{2.5em}
+\setlength{\parskip}{0.75em}
+
+\title{
+	% title
+	% class name; assignment number; assignment name
+	 -  - \\
+	% subtitle
+ 	\large Game Development
+}
+\author{
+	Julián A. Avar C. \thanks{
+		ID: \texttt{\#0004984424};
+		Term: \texttt{};
+		Class: \texttt{};
+		Email: \texttt{<jaavarcampopiano@student.fullsail.edu>}
+	} \authorcr
+	Full Sail University
+}
+% \author[*]{} \affil[*]{}
+% \date{}
+
+\begin{document}
+	\maketitle
+	
+	\begin{abstract}
+		Lorem \autocite{name} ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in congue justo, et porta eros. Morbi ut est tellus. Integer cursus nulla ut ex malesuada ultricies sed pellentesque lectus. Mauris accumsan sit amet magna sed dapibus. Nunc molestie at ipsum vel posuere. Suspendisse at dignissim dui. Sed a risus elit. Fusce ut vestibulum metus. Nullam hendrerit lacinia efficitur. Vivamus porta augue ac finibus iaculis.
+	\end{abstract}
+
+	\pagenumbering{arabic}
+	
+	\section{Lorem Ipsum}
+	
+	% \begin{wrapfigure}{r}{0.26\textwidth}
+	% 	\centering
+	% 	\includegraphics[width=0.25\textwidth]{sal_khan}
+	% \end{wrapfigure}
+	
+	Suspendisse potenti. Integer purus ex, porttitor pharetra mauris vitae, tincidunt lacinia diam. Etiam gravida, leo nec condimentum mollis, nisl arcu varius enim, a dapibus libero sapien ac lacus. Donec condimentum at mi imperdiet hendrerit. Aenean efficitur dolor leo, scelerisque luctus arcu ornare in. Donec pulvinar turpis nunc, ut commodo nisi maximus a. Etiam sit amet maximus massa. Nulla in odio vitae tellus egestas molestie nec eget lectus. Vivamus interdum ex quis massa egestas, id suscipit ligula consectetur. Etiam sodales urna sodales, auctor tellus ut, dignissim sem. Phasellus volutpat vehicula felis, vitae dapibus lacus iaculis eget. Cras et massa dignissim, feugiat ex ut, feugiat augue. Phasellus sit amet malesuada lorem, et semper eros. Suspendisse lacinia ex ultrices, sodales odio vitae, vestibulum sem. Duis quis quam mollis dolor feugiat aliquam. Fusce vel sodales sem.
+	
+	Praesent dictum velit at diam condimentum eleifend. Mauris a nisi nibh. Quisque turpis lectus, maximus nec viverra dictum, dignissim vitae dolor. Pellentesque iaculis magna quis nulla fringilla rutrum. Nam at neque a lectus luctus dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam sollicitudin aliquet libero, ut commodo velit fermentum sit amet. Nam placerat sapien felis, quis imperdiet metus malesuada eget. Donec eu enim ut nisl blandit rutrum. Morbi leo urna, lobortis vitae vulputate sed, ultricies ac nibh. Pellentesque mi enim, tempor nec pulvinar sit amet, molestie nec mauris. 
+	
+	% use \bigskip when there's not enough content to \clearpage
+	% \bigskip
+	\clearpage
+	
+	\pagenumbering{roman}
+	
+	% usually called "References"
+	\printbibliography[title = {Bibliography}]
+	
+	\tableofcontents
+	
+\end{document}
