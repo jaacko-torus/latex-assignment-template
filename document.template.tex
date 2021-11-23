@@ -20,8 +20,8 @@
 \usepackage[
 	backend=biber,
 	% numeric, apa, mla, chicago-authordate, ieee, nature, chem-acs, science
-	style=apa,
-	sorting=none
+	style=[[latex.citations.style]],
+	sorting=[[latex.citations.sorting]]
 	% autocite=footnote
 ]{biblatex}
 \usepackage{parskip}
@@ -49,18 +49,18 @@
 \title{
 	% title
 	% class name; assignment number; assignment name
-	 -  - \\
+	[[class.name]] - [[assignment.id]] - [[assignment.name]]\\
 	% subtitle
- 	\large Game Development
+ 	\large [[student.degree]]
 }
 \author{
-	Julián A. Avar C. \thanks{
-		ID: \texttt{\#0004984424};
-		Term: \texttt{};
-		Class: \texttt{};
-		Email: \texttt{<jaavarcampopiano@student.fullsail.edu>}
+	[[student.name]] \thanks{
+		ID: \texttt{[[student.id]]};
+		Term: \texttt{[[student.term]]};
+		Class: \texttt{[[student.class]]};
+		Email: \texttt{<[[student.email]]>}
 	} \authorcr
-	Full Sail University
+	[[student.school]]
 }
 % \author[*]{} \affil[*]{}
 % \date{}
